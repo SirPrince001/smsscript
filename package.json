@@ -1,0 +1,23 @@
+{
+  "name": "uploadexcelfile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prince Bassey",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "convert-excel-to-json": "^1.7.0",
+    "dotenv": "^8.2.0",
+    "exceljs": "^4.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.5",
+    "multer": "^1.4.2",
+    "node-cron": "^2.0.3",
+    "read-excel-file": "^4.1.0",
+    "twilio": "^3.54.0"
+  }
+}
