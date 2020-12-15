@@ -24,11 +24,12 @@ module.exports = {
            const users = await User.find({})
             users.forEach(async user => {
                 if (user.birthday.getMonth() + 1 === new Date().getMonth() + 1 && user.birthday.getDate() === new Date().getDate()) {
-                    console.log('Happy Birthday', user);
+                    //console.log('Happy Birthday', user);
+                     await sendMessage(`Hi , Happy Birhday ${user.fullname} we know how imaportant today is to you, cheers to your new age` , user.phone)
+          
                 }
 
-               // await sendMessage(`Hi , Happy Birhday ${user.fullname} we know how imaportant today is to you, cheers to your new age` , user.phone)
-            })
+                })
         })
     }
 }
